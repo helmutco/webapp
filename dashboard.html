@@ -42,6 +42,25 @@
 
 		</script>
 
+		<script>
+			  window.fbAsyncInit = function() {
+			    FB.init({
+			      appId      : '389313394581663',
+			      xfbml      : true,
+			      version    : 'v2.3'
+			    });
+			  };
+
+			  (function(d, s, id){
+			     var js, fjs = d.getElementsByTagName(s)[0];
+			     if (d.getElementById(id)) {return;}
+			     js = d.createElement(s); js.id = id;
+			     js.src = "//connect.facebook.net/en_US/sdk.js";
+			     fjs.parentNode.insertBefore(js, fjs);
+			   }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+
 	</head>
 	<body>
 		
@@ -87,7 +106,7 @@
 							<p>Accède à toutes les fonctionnalités de recherches en créant ton compte sur Helmut.<strong> GRATUITEMENT</strong>.</p>
 						</div>	
 						<div class="col-md-4 col-xs-12 text-right">
-							<a href="#" class="join-btn">Créer un compte</a>
+							<a href="signup.html" class="join-btn">Créer mon compte</a>
 						</div>	
 					</div>	
 				</div>
