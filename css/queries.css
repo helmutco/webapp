@@ -16,7 +16,6 @@
 	.learn-btn{display:none;}
 	footer li{display:block;text-align:left;padding:20px 0;border-bottom:dashed 1px #c7cacc;margin-right:0!important;float:none;}
 	nav{margin-top:40px;}
-	.feature{padding-bottom: 0px; width: 75%;}
 	.image3{display:none;}
 	.content{width: 400px; text-align: center; }
 }
@@ -25,7 +24,6 @@
 	section.video i{font-size:30px;}
 	section.video h1{font-size:15px;font-weight:400;}
 	section.video{padding:40px;}
-	.feature {padding-bottom: 0px; width: 100%;}
 	.feature-content {width:70%;text-align:center;}
 	.feature-icon{display:block;margin:0 auto;}
 	.image3{display:none;}
