@@ -118,7 +118,6 @@ h1 {
 h2 {
     margin: 0em 0;
     font-size: 1.1em;
-    color: #3d3d3d;
     font-weight: 600;
 }
 h3 {
@@ -369,9 +368,42 @@ Navigation
 
 .navbar{
     height: 40px;
-    background-color: rgba(251,251,251,100);
-    border-bottom: 1px solid rgba(233,233,233,100);
+    background-color: rgba(49,49,49,100);
     padding-top: 12px;
+}
+
+.navbar span{
+    font-size: 11px;
+    padding-right: 10px;
+    color:#fff;
+}
+
+
+/* ==========================================================================
+Sub=menu
+========================================================================== */
+
+section.sub-menu{
+    margin-top: 40px;
+    padding-bottom: 12px;
+    background: rgba(254,254,254,100);
+    border-bottom: 1px solid rgba(233,233,233,100);
+}
+
+
+.sub-menu h1{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 20px;
+
+}
+
+.nav-pills{
+    margin-top: 20px;
+    display:inline-block;
+    height: 20px;
+    font-size: 12px;
+    color:#333;
 }
 
 
@@ -380,27 +412,16 @@ Results
 ========================================================================== */
 
 section.results{
-    background-color: rgba(255,255,255,100);
-    margin-top: 50px;
+    background-color: rgba(250,250,250,100);
 }
 
 .thumbnail{
-    background: rgba(242,242,242,100);
+    background: rgba(255,255,255,100);
     margin-top: 30px;
     border-radius: 2px;
     border: 1px solid rgba(233,233,233,100);
 }
 
-.menu{
-    border-bottom: 1px solid rgba(234,234,234,100);
-}
-
-.menu h1{
-    font-size: 16px;
-    font-weight: 600;
-    padding-top: 20px;
-
-}
 
 .thumbnail img{
 
@@ -409,17 +430,57 @@ section.results{
 .thumbnail h2{
     font-size: 14px;
     color:#272727;
-    padding-top: 15px;
+    padding-top: 5px;
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 .thumbnail p{
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 300;
     color:#272727;
     padding-left: 5px;
     padding-right: 5px;
     text-align: justify;
     line-height: 1.4em;
 }
+
+.thumbnail span{
+    font-size: 11px;
+    color:#AD0B06;
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+
+.subscriber-banner{
+    background: rgba(162,93,93,100);
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+.subscriber-content p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.join-btn{
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    background-color: #F08F3F;
+    color: #fff;
+    font-size: 12px;
+}
+
+.join-btn:hover, .join-btn:focus {
+    background-color: #DA6E15;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
 
 
