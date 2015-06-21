@@ -14,6 +14,7 @@
 		<meta name="author" content="Helmut - l'entremetteur automobile" />
 		<!-- Bootstrap -->
 		<script src="js/modernizr.custom.js"></script>
+		<script src="js/scripts.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<link href="css/dashboard.css" rel="stylesheet">
@@ -75,8 +76,9 @@
 					<a href="#"><img src="img/logo_small.png"></a>
 				</div>
 				<div class="col-md-6 col-xs-6 text-right">
-					<span>Yann Sander</span>
-					<img src="img/ID.png">
+					<a href="signup.html"><span>Créer mon compte</span></a>
+					<!-- <span>Yann Sander</span>
+					<img src="img/ID.png"> -->
 				</div>
 			</div>		
 		</header>	
@@ -87,13 +89,13 @@
 					<div class="col-md-8 col-xs-6 text-left">
 							<h1>Ton dashboard</h1>
 					</div>	
-					<div class="col-md-4 col-xs-6 text-right">
+					<!-- <div class="col-md-4 col-xs-6 text-right">
 						 <ul class="nav nav-pills">
 							  <li role="recent" class="active"><a href="#">Recent</a></li>
 							  <li role="prix"><a href="#">Prix</a></li>
 							  <li role="presentation"><a href="#">Populaire</a></li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 			</div>	
 		</section>	
@@ -116,7 +118,7 @@
 				<div class="row">
 					<div class="offres">
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -126,35 +128,33 @@
 					    </a>
 					  </div> 
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
-								<li><span id="Price">20.000 Euros</span></li>
+								<li><span class="Price" id="Price">20.000 Euros</span></li>
 								<li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
 							</ul>
 					    </a>
 					  </div> 
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
-								<li><span id="Price">20.000 Euros</span></li>
+								<li><span class="Price" id="Price">20.000 Euros</span></li>
 								<li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
 							</ul>
 					    </a>
 					  </div> 
-				  	</div>
+					</div>
 				</div>
-			</div>
-
-
+			</div>	
 			<div class="container">
 				<div class="row">
 					<div class="offres">
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -164,34 +164,33 @@
 					    </a>
 					  </div> 
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
-								<li><span id="Price">20.000 Euros</span></li>
+								<li><span class="Price" id="Price">20.000 Euros</span></li>
 								<li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
 							</ul>
 					    </a>
 					  </div> 
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
-								<li><span id="Price">20.000 Euros</span></li>
+								<li><span class="Price" id="Price">20.000 Euros</span></li>
 								<li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
 							</ul>
 					    </a>
 					  </div> 
-				  	</div>
+					</div>
 				</div>
-			</div>
-
+			</div>	
 			<div class="container">
 				<div class="row">
 					<div class="offres">
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -201,45 +200,49 @@
 					    </a>
 					  </div> 
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
-								<li><span id="Price">20.000 Euros</span></li>
+								<li><span class="Price" id="Price">20.000 Euros</span></li>
 								<li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
 							</ul>
 					    </a>
 					  </div> 
 					  <div class="col-xs-12 col-md-4">
-					    <a href="#" class="thumbnail">
+					    <a data-toggle="modal" href="#connexion" class="thumbnail">
 					      <img src="img/01.jpg" alt="...">
 					      	<ul class="list-unstyled">
 								<li><h2 id="Titre">BMW Serie 3</h2></li>
-								<li><span id="Price">20.000 Euros</span></li>
+								<li><span class="Price" id="Price">20.000 Euros</span></li>
 								<li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
 							</ul>
 					    </a>
 					  </div> 
-				  	</div>
+					</div>
 				</div>
-			</div>
 
-			<div class="pagination col-md-12 col-xs-12 text-center" id="pagination">
-			<nav>
-			  <ul class="pagination">
-			    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-			    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-			    <li class="inactive"><a href="#">2 <span class="sr-only">(current)</span></a></li>
-			    <li class="inactive"><a href="#">3 <span class="sr-only">(current)</span></a></li>
-			    <li class="inactive"><a href="#">4 <span class="sr-only">(current)</span></a></li>
-			    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-			  </ul>
-			</nav>
-		</div>
+				<div class="pagination col-md-12 col-xs-12 text-center" id="pagination">
+					<nav>
+					  <ul class="pagination">
+					    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+					    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					    <li class="inactive"><a href="#">2 <span class="sr-only">(current)</span></a></li>
+					    <li class="inactive"><a href="#">3 <span class="sr-only">(current)</span></a></li>
+					    <li class="inactive"><a href="#">4 <span class="sr-only">(current)</span></a></li>
+					    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+					  </ul>
+					</nav>
+				</div>
+
+			</div>		  
+
+
+					  
+			
+
 
 		</section>	
-
-				
 
 		<footer class="footer">
 			<div class="col-md-12 text-center">
@@ -250,6 +253,27 @@
 			</div>
 		</footer>
 				
+
+		 <!-- Modal Connexion -->
+		  <div class="modal fade" id="connexion" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content col-md-12 text-center">
+		      	<div class="modal-header">
+		      		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		     	 </div>
+		        <div class="modal-body">
+		          <img src="img/bientot.png">
+		          <p>En créant un compte sur Helmut, accède à toutes les fonctionnalités de recherche de voitures. SIMPLE et COLLABORATIF.</p>
+		          <a href="signup.html" class="join-btn">Créer mon compte</a><br>
+		          <span><strong>Gratuit</strong>. En 2 minutes chrono.</span>
+		        </div>
+		      </div>
+		      
+			    </div>
+			  </div>
+			</div>		
 		
 		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

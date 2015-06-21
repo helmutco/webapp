@@ -143,3 +143,21 @@ count+=1;
 	});
 
 });
+
+
+/***************** Product Modal ******************/
+
+$(document).ready(function(){
+    // Show the Modal on load
+    $("#connexion").modal("show");
+    
+    // Hide the Modal
+    $("#close").click(function(){
+        $("#connexion").modal("hide");
+    });
+});
+
+
+
+
+

@@ -384,22 +384,22 @@ Sub=menu
 ========================================================================== */
 
 section.sub-menu{
-    margin-top: 40px;
-    padding-bottom: 12px;
+    margin-top: 30px;
+    padding-bottom: 8px;
     background: rgba(254,254,254,100);
     border-bottom: 1px solid rgba(233,233,233,100);
 }
 
 
 .sub-menu h1{
-    font-size: 16px;
-    font-weight: 600;
-    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 26px;
 
 }
 
 .nav-pills{
-    margin-top: 20px;
+    padding-top: 13px;
     display:inline-block;
     height: 20px;
     font-size: 12px;
@@ -553,6 +553,36 @@ section.hero{
 }
 
 
+/* ==========================================================================
+Product Modal
+========================================================================== */
 
+.modal-header{
+    border-bottom: 0;
+    text-align: center;
+}
 
+.modal-content{
+    border-radius: 3px;
+    background: rgba(250,250,250,100);
+}
 
+.modal-content p{
+    font-size:14px;
+    color:#333;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 400;
+    text-transform: justify;
+    line-height: 1.4em;
+}
+
+.modal-content img{
+    padding:20px;
+}
+
+.modal-content span{
+    font-size:11px;
+    font-weight: 300;
+    color:#333;
+}

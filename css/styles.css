@@ -682,7 +682,7 @@ Hero
 .hero {
     position: relative;
     padding: 30px 0 60px 0;
-    min-height: 600px;
+    min-height: 570px;
     background: rgba(28,29,31,84) no-repeat center center;
     background-size: 100%;
     color: #fff;   
@@ -739,44 +739,6 @@ Hero
 
 header i {
     margin-left: 5px
-}
-
-.vente-modal-lg{
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-title h2{
-    margin-top:30px;
-    color: #B72F29;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.modal-body p{
-    color: #474747;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.modal-body input{
-    background-color: #fff;
-    border: 1px solid #E0E0E0;
-    margin: 30px 30px;
-    padding: 20px 20px;
-    width: 300px;
-    height: 40px;
-    color: #474747;
-    font-size: 12px;
-    font-weight: 200;
-}
-
-.image2{
-    width: 570px;
-    height: 300px;
-    margin-top:40px;
-    margin-bottom:20px;
-    background: url('../img/vente.png');
-    background-size: cover;
 }
 
 
@@ -976,3 +938,48 @@ footer li a {
 footer li:last-child {
     margin-right: 0
 }
+
+
+/* ==========================================================================
+Product Modal
+========================================================================== */
+
+.modal-header{
+    border-bottom: 0;
+    text-align: center;
+}
+
+.modal-content{
+    border-radius: 3px;
+    background: rgba(250,250,250,100);
+}
+
+.modal-content p{
+    font-size:14px;
+    color:#333;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 400;
+    text-transform: justify;
+    line-height: 1.4em;
+}
+
+.modal-content img{
+    padding:20px;
+}
+
+.modal-content span{
+    font-size:11px;
+    font-weight: 300;
+    color:#333;
+}
+
+.form-control{
+    width: 60%;
+    margin: 30px;
+    border-radius: 2px;
+    border: 1px solid rgba(233,233,233,100);
+}
+
+
+
