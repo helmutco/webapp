@@ -91,7 +91,7 @@
   function testAPI() {
     FB.api('/me', function(response) {
       $.ajax({
-         url: 'http://api.helmut.dev/checkuser',
+         url: 'http://api.helmut.dev/login',
          xhrFields: {
             withCredentials: true
          }
@@ -100,6 +100,7 @@
         //console.log('Successful login for: ' + response.name);
         document.getElementById('status').innerHTML =
           'Thanks for logging in, ' + response.name + '!';
+        document.getElementById('username').innerHTML = response.name;
         document.getElementById('login').style.display = "none"; 
         document.getElementById('connected').style.display = "initial"; 
         document.getElementById('profile_pic').src =
