@@ -9,7 +9,7 @@ HTML5 display definitions
 */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
-    display: block
+    display: block;
 }
 
 /*
@@ -362,6 +362,41 @@ Buttons
     text-decoration: none;
 }
 
+.facebook-btn{
+    margin: 20px;
+    padding: 12px;
+    border-radius: 2px;
+    background-color: rgba(80,124,192,100);
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.facebook-btn:hover, .facebook-btn:focus{
+    background-color: rgba(30,93,192,100);
+    color: #fff;
+    text-decoration: none;
+}
+
+.twitter-btn{
+    padding: 12px;
+    padding-right: 20px; 
+    margin-right: 15px;
+    border-radius: 2px;
+    background-color: rgba(100,204,241,100);
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.twitter-btn:hover, .twitter-btn:focus{
+    background-color: rgba(20,182,239,100);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
 /* ==========================================================================
 Navigation
 ========================================================================== */
@@ -482,80 +517,12 @@ section.results{
 
 
 /* ==========================================================================
-Hero
-========================================================================== */
-
-section.hero{
-    background-color: rgba(250,250,250,100);
-    position:relative;
-    min-height: 600px;
-    margin-top: 40px;
-}
-
-.headline h1{
-    font-size:25px;
-    font-weight:600;
-    padding-top: 20px;
-}
-
-.headline span{
-    font-size:11px;
-    font-weight:200;
-    padding-top: -20px;
-}
-
-.connexion{
-    background: rgba(255,255,255,100);
-    margin-top: 20px;
-    border-radius: 2px;
-    border: 1px solid rgba(233,233,233,100);
-}
-
-.connexion-content{
-    padding: 20px 20px;
-}
-
-.connexion-content p{
-    font-size: 11px;
-}
-
-.input-group{
-    padding: 5px 20px;
-}
-
-.form-control{
-    margin-top: 20px;
-    background: ;
-    color:#333;
-    border: 1px solid rgba(233,233,233,100);
-    font-size: 12px;
-    border-radius: 2px;
-}
-
-.facebookConnect{
-    margin-top: 20px;
-    padding: 5px 20px;
-}
-
-.explication{
-    margin-top: 10px;
-    padding: 50px 70px;
-}
-
-.explication h2{
-    font-size: 14px;
-}
-
-.explication p{
-    font-size: 12px;
-    font-weight: 200;
-    line-height: 1.4em;
-}
-
-
-/* ==========================================================================
 Product Modal
 ========================================================================== */
+
+.modal-dialog{
+    margin-top: 100px;
+}
 
 .modal-header{
     border-bottom: 0;
