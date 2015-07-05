@@ -1,0 +1,53 @@
+<section class="test">
+	<div class="col-md-12">
+		<div class="main cleartestfix">
+		<!-- <div class="main cleartestfix">	
+			<form  ng-submit="submit()" ng-controller="CriteresController" id="nl-form" class="nl-form">
+				Je cherche
+				<select name="style">
+					<option value="citadine" selected>une citadine</option>
+					<option value="sportive">une sportive</option>
+					<option value="break">un break</option>
+					<option value="4x4">un 4x4</option>
+					<option value="berline">une berline</option>
+					<option value="coupé">une coupé</option>
+					<option value="cabriolet">un cabriolet</option>
+				</select>
+				près de
+				<input type="text" value="" placeholder="Paris" data-subline="Par exemple: <em>Nantes</em> ou <em>Bordeaux</em>"/>,
+				entre
+				<input type="text" value="" placeholder="15.000" data-subline="Par exemple: <em>17.500 €</em> ou <em>20.400 €</em>"/> €
+				et
+				
+				<input type="text" value="" placeholder="18.800" data-subline="Par exemple: <em>20.250 €</em> ou <em>34.000 €</em>"/> €
+				et 
+				
+				<input type="text" value="" placeholder="50.000" data-subline="Par exemple: <em>60.250</em> ou <em>70.000</em>"/>
+				kms maximum.	
+				<div class="nl-submit-wrap">
+					<button class="nl-submit" type="submit">Trouver ma voiture</button>
+				</div>
+				<div class="nl-overlay"></div>
+			</form>
+		</div> -->
+		<form id="nl-form" class="nl-form" ng-submit="submit()">
+        Je cherche
+	    <nl-select value='answers.categorie' options='categories' multiple="ou" none="pas" all="une voiture"></nl-select><br />
+        près de
+		<nl-text value="answers.city" placeholder="toute ville" subline="{{ subline }}" name="city"></nl-text>
+		entre
+        <nl-text value="answers.prixmin" placeholder="10 000" subline="{{ subline }}" name="prixmin"></nl-text>
+        € et
+        <nl-text value="answers.prixmax" placeholder="100 000" subline="{{ subline }}" name="prixmax"></nl-text>
+        € et
+        <nl-text value="answers.kilometrage" placeholder="50 000" subline="{{ subline }}" name="kilometrage"></nl-text>
+        kms maximum.
+        <div class="nl-submit-wrap">
+            <button class="nl-submit" type="submit">Trouver ma voiture</button>
+        </div>
+        
+    </form>
+	</div>
+	</div>
+
+</section>

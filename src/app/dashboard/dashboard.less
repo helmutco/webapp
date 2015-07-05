@@ -1,0 +1,555 @@
+/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+
+/*
+* Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+/*
+* Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+* Prevents modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+* Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
+* Known issue:no IE 6 support.
+*/
+[hidden] {
+    display: none
+}
+
+/* ==========================================================================
+Base
+========================================================================== */
+/*
+* 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+*    `em` units.
+* 2. Prevents iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+* Addresses `font-family` inconsistency between `textarea` and other form
+* elements.
+*/
+html, button, input, select, textarea {
+    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/*
+* Addresses margins handled incorrectly in IE 6/7.
+*/
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*
+* Font Smoothing
+*/
+html, html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+Links
+========================================================================== */
+/*
+* Addresses `outline` inconsistency between Chrome and other browsers.
+*/
+
+a:focus {
+    outline: thin dotted;
+    text-decoration: none;
+}
+
+/*
+* Improves readability when focused and also mouse hovered in all browsers.
+*/
+a:active, a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+/*
+* Addresses font sizes and margins set differently in IE 6/7.
+* Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome.
+*/
+
+h1 {
+    margin: 0.67em 0;
+    font-size: 2em;
+}
+h2 {
+    margin: 0em 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+h3 {
+    margin: 1em 0;
+    font-size: 1.17em;
+    font-weight: 400;
+}
+h4 {
+    margin: 1.33em 0;
+    font-size: 1em;
+}
+h5 {
+    margin: 1.67em 0;
+    font-size: 0.83em;
+}
+h6 {
+    margin: 2.33em 0;
+    font-size: 0.75em;
+}
+
+p{
+    font-size: 2.4em;
+}
+
+/*
+* Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+*/
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+/*
+* Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+*/
+b, strong {
+    font-weight: bold
+}
+blockquote {
+    margin: 0px
+}
+
+/*
+* Addresses styling not present in Safari 5 and Chrome.
+*/
+dfn {
+    font-style: italic
+}
+
+/*
+* Addresses styling not present in IE 6/7/8/9.
+*/
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+p, pre {
+    margin: 1em 0
+}
+
+/*
+* Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+*/
+code, kbd, pre, samp {
+    font-size: 1em;
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+}
+
+/*
+* Improves readability of pre-formatted text in all browsers.
+*/
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+* Addresses CSS quotes not supported in IE 6/7.
+*/
+q {
+    quotes: none
+}
+
+/*
+* Addresses `quotes` property not supported in Safari 4.
+*/
+q:before, q:after {
+    content: '';
+    content: none;
+}
+small {
+    font-size: 75%
+}
+
+/*
+* Prevents `sub` and `sup` affecting `line-height` in all browsers.
+*/
+sub, sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+}
+sup {
+    top: -0.5em
+}
+sub {
+    bottom: -0.25em
+}
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+a {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: color, border-color, background-color;
+    transition-property: color, border-color, background-color;
+}
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+p {
+    font-size: 16px;
+    line-height: 25px;
+}
+a {
+    color: #73d0da
+}
+a:hover, a:focus {
+    color: #73d0da;
+    text-decoration: none;
+}
+.texture-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/grid.png);
+}
+
+.headline{
+    text-align: center;
+    font-size:30px;
+    font-weight: 300;
+    color: #565a5c; 
+}
+
+
+.sub-headline{
+    font-size:14px;
+    color: #676767;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+.use-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 13px 25px;
+    border-radius: 3px;
+    background-color: #F08F3F;
+    color: #fff;
+    font-size: 16px;
+}
+
+.use-btn:hover, .use-btn:focus {
+    background-color: #DA6E15;
+    color: #fff;
+    text-decoration: none;
+}
+
+.learn-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #EB603A;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #323a45;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.read-more-btn i, .download-btn i {
+    margin-left: 5px
+}
+.showcase .download-btn {
+    margin-top: 50px
+}
+.download .download-btn {
+    margin-top: 25px;
+}
+
+.shuffle-btn{
+    display: inline-block;
+    margin: 50px 8px 8px 0;
+    padding: 13px 25px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+}
+
+.shuffle-btn:hover, .use2-btn:hover, .shuffle-btn:focus, .use2-btn:focus{
+    color: #EF8005;
+    border: 1px solid #D57406;
+    text-decoration: none;
+}
+
+.facebook-btn{
+    margin: 20px;
+    padding: 12px;
+    border-radius: 2px;
+    background-color: rgba(80,124,192,100);
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.facebook-btn:hover, .facebook-btn:focus{
+    background-color: rgba(30,93,192,100);
+    color: #fff;
+    text-decoration: none;
+}
+
+.twitter-btn{
+    padding: 12px;
+    padding-right: 20px; 
+    margin-right: 15px;
+    border-radius: 2px;
+    background-color: rgba(100,204,241,100);
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.twitter-btn:hover, .twitter-btn:focus{
+    background-color: rgba(20,182,239,100);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+
+.navbar{
+    height: 40px;
+    background-color: rgba(49,49,49,100);
+    padding-top: 12px;
+}
+
+.navbar span{
+    font-size: 11px;
+    padding-right: 10px;
+    color:#fff;
+}
+
+
+/* ==========================================================================
+Sub=menu
+========================================================================== */
+
+section.sub-menu{
+    margin-top: 30px;
+    padding-bottom: 8px;
+    background: rgba(254,254,254,100);
+    border-bottom: 1px solid rgba(233,233,233,100);
+}
+
+
+.sub-menu h1{
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 26px;
+
+}
+
+.nav-pills{
+    padding-top: 13px;
+    display:inline-block;
+    height: 20px;
+    font-size: 12px;
+    color:#333;
+}
+
+
+/* ==========================================================================
+Results
+========================================================================== */
+
+section.results{
+    background-color: rgba(250,250,250,100);
+}
+
+.thumbnail{
+    background: rgba(255,255,255,100);
+    margin-top: 30px;
+    border-radius: 2px;
+    border: 1px solid rgba(233,233,233,100);
+}
+
+
+.thumbnail img{
+
+}
+
+.thumbnail h2{
+    font-size: 14px;
+    color:#272727;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.thumbnail p{
+    font-size: 12px;
+    font-weight: 300;
+    color:#272727;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+.thumbnail span{
+    font-size: 11px;
+    color:#AD0B06;
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+
+.subscriber-banner{
+    background: rgba(162,93,93,100);
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+.subscriber-content p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.join-btn{
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    background-color: #F08F3F;
+    color: #fff;
+    font-size: 12px;
+}
+
+.join-btn:hover, .join-btn:focus {
+    background-color: #DA6E15;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+Product Modal
+========================================================================== */
+
+.modal-dialog{
+    margin-top: 100px;
+}
+
+.modal-header{
+    border-bottom: 0;
+    text-align: center;
+}
+
+.modal-content{
+    border-radius: 3px;
+    background: rgba(250,250,250,100);
+}
+
+.modal-content p{
+    font-size:14px;
+    color:#333;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 400;
+    text-transform: justify;
+    line-height: 1.4em;
+}
+
+.modal-content img{
+    padding:20px;
+}
+
+.modal-content span{
+    font-size:11px;
+    font-weight: 300;
+    color:#333;
+}
