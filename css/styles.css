@@ -840,10 +840,8 @@ section.benefits {
 }
 
 .image{ 
-    width: 540px;
-    height: 360px;
-    background: url('../img/dashboard1.png');
-    background-size: cover;
+    width: auto;
+    height: 390px;
 }
 
 /* ==========================================================================
