@@ -842,6 +842,7 @@ section.benefits {
 .image{ 
     width: auto;
     height: 383px;
+    background: transparent;
     background-size: 100%;
 }
 
