@@ -671,7 +671,7 @@ Hero
 .hero {
     position: relative;
     padding: 30px 0 60px 0;
-    min-height: 570px;
+    min-height: 600px;
     background: url('../img/girl.jpeg') no-repeat center center;
     z-index: 0;
     background-size: 100%;
@@ -680,9 +680,9 @@ Hero
 
 .layer{
     position: absolute;
-    background: rgba(0,0,0,0.67);
+    background: rgba(0,0,0,0.6);
     width: 100%;
-    min-height: 570px; 
+    min-height: 600px; 
     top: 0;
 }
 

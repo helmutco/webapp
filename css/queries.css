@@ -16,11 +16,10 @@
 	.learn-btn{display:none;}
 	footer li{display:block;text-align:left;padding:20px 0;border-bottom:dashed 1px #c7cacc;margin-right:0!important;float:none;}
 	nav{margin-top:40px;}
-	.image3{display:none;}
 	.content{width: 400px; text-align: center; }
 }
 @media screen and (max-width:465px){
-	.hero h1{font-size:10px;margin:100px 0 45px 0}
+	.hero h1{font-size:14px;margin:100px 0 45px 0}
 	section.video i{font-size:30px;}
 	section.video h1{font-size:15px;font-weight:400;}
 	section.video{padding:40px;}

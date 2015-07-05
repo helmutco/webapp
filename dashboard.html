@@ -168,7 +168,7 @@
 					<a href="index.html"><img src="img/logo_small.png"></a>
 				</div>
 				<div class="col-md-6 col-xs-6 text-right">
-					<a data-toggle="modal" href="#connexion"><span>Créer mon compte</span></a>
+					<a data-toggle="modal" href="#welcome"><span>Créer mon compte</span></a>
 					<!-- <span>Yann Sander</span>
 					<img src="img/ID.png"> -->
 				</div>
@@ -193,7 +193,7 @@
 			</div>	
 		</section>	
 
-		<section class="results" id="results">
+		<section class="results" id="login">
 			<div class="container">
 				<div class="subscriber-banner">
 					<div class="row">
@@ -360,17 +360,35 @@
 		          <img src="img/bientot.png">
 		          <p>En créant un compte sur Helmut, accède à toutes les fonctionnalités de recherche de voitures.<br><br> SIMPLE et COLLABORATIF.</p>
 		          	<div class="facebookconnect">
-		          		<fb:login-button scope="public_profile,email" class="facebook-btn" onlogin="checkLoginState()">Se connecter avec Facebook</fb:login-button><br><br>
+		          		<fb:login-button scope="public_profile,email" onlogin="checkLoginState()">Se connecter avec Facebook</fb:login-button><br><br>
 		      	    <div id="status">
             		  </div>
 		      		</div>
-		          <span><strong>Gratuit</strong>. En 2 minutes chrono.</span>
+		          <span><strong>Gratuit</strong>.</span>
 		        </div>
 		      </div>
-		      
+			    </div>
+			  </div>	
+
+
+			  <!-- Modal Welcome -->
+		  <div class="modal fade" id="welcome" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content col-md-12 text-center">
+		      	<div class="modal-header">
+		      		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		     	 </div>
+		        <div class="modal-body">
+		          <img src='profile_pic'>
+		          <p>'status'</p>
+		          	
+		          
+		        </div>
+		      </div>
 			    </div>
 			  </div>
-			</div>		
 		
 		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -380,7 +398,5 @@
 		<script src="js/retina.js"></script>
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<!--script src="js/min/scripts-min.js"></script-->
-		<script src="js/scripts.js"></script>
 	</body>
 </html>
