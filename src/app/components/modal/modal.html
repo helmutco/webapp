@@ -1,0 +1,18 @@
+<div class="modal fade in" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content col-md-12 text-center">
+      <div class="modal-header">
+              <button type="button" class="close" aria-label="Close" ng-click="$hide()">x</button>
+           </div>
+            <div class="modal-body">
+              <img src="assets/images/bientot.png">
+
+<button type="button" class="btn btn-primary btn-large" ng-show="!logged" ng-disabled="!facebookReady" ng-click="login()">Login with Facebook</button>
+              
+              <p>En créant un compte sur Helmut, accède à toutes les fonctionnalités de recherche de voitures.<br><br> SIMPLE et COLLABORATIF.</p>
+ 
+                <div ng-show="logged" id="status">Thanks for logging in, {{user.name}}!</div>
+            </div>
+    </div>
+  </div>
+</div>

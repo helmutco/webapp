@@ -6,7 +6,9 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider) {
+  function config($logProvider, FacebookProvider) {
+    var myAppId = '389313394581663';
+    FacebookProvider.init(myAppId);
     // Enable log
      $logProvider.debugEnabled(true);
 

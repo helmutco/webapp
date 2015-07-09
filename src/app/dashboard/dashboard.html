@@ -3,10 +3,12 @@
         <div class="col-md-6 col-xs-6 text-left">
           <a href="index.html"><img src="assets/images/logo_small.png"></a>
         </div>
-        <div class="col-md-6 col-xs-6 text-right">
-          <a ng-click="gotoModal()"><span>Créer mon compte</span></a>
-          <!-- <span>Yann Sander</span>
-          <img src="assets/images/ID.png"> -->
+        <div ng-show="!logged" class="col-md-6 col-xs-6 text-right">
+          <a ng-click="showModal()"><span>Créer mon compte</span></a>
+        </div>
+        <div ng-show="logged" class="col-md-6 col-xs-6 text-right">
+          <span>{{user.name}}</span>
+          <img width="30px" style="border-radius:20px" src="{{user.profilepic}}">
         </div>
       </div>  
 
@@ -31,13 +33,13 @@
 
     <section class="results" id="login">
       <div class="container">
-        <div class="subscriber-banner">
+        <div ng-show="!logged" class="subscriber-banner">
           <div class="row">
             <div class="subscriber-content col-md-8 col-xs-12 text-left">
               <p>Accède à toutes les fonctionnalités de recherches en créant ton compte sur Helmut.<strong> GRATUITEMENT</strong>.</p>
             </div>  
             <div class="col-md-4 col-xs-12 text-right">
-              <a class="join-btn" ng-click="gotoModal()">Créer mon compte</a>
+              <a class="join-btn" ng-click="showModal()">Créer mon compte</a>
             </div>  
           </div>  
         </div>
@@ -47,7 +49,7 @@
         <div class="row">
           <div class="offres">
             <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
+              <a ng-click="showModal()" class="thumbnail">
                 <img src="assets/images/01.jpg" alt="...">
                   <ul class="list-unstyled">
                 <li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -57,7 +59,7 @@
               </a>
             </div> 
             <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
+              <a ng-click="showModal()" class="thumbnail">
                 <img src="assets/images/01.jpg" alt="...">
                   <ul class="list-unstyled">
                 <li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -67,43 +69,7 @@
               </a>
             </div> 
             <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
-                <img src="assets/images/01.jpg" alt="...">
-                  <ul class="list-unstyled">
-                <li><h2 id="Titre">BMW Serie 3</h2></li>
-                <li><span class="Price" id="Price">20.000 Euros</span></li>
-                <li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
-              </ul>
-              </a>
-            </div> 
-          </div>
-        </div>
-      </div>  
-      <div class="container">
-        <div class="row">
-          <div class="offres">
-            <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
-                <img src="assets/images/01.jpg" alt="...">
-                  <ul class="list-unstyled">
-                <li><h2 id="Titre">BMW Serie 3</h2></li>
-                <li><span class="Price" id="Price">20.000 Euros</span></li>
-                <li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
-              </ul>
-              </a>
-            </div> 
-            <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
-                <img src="assets/images/01.jpg" alt="...">
-                  <ul class="list-unstyled">
-                <li><h2 id="Titre">BMW Serie 3</h2></li>
-                <li><span class="Price" id="Price">20.000 Euros</span></li>
-                <li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
-              </ul>
-              </a>
-            </div> 
-            <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
+              <a ng-click="showModal()" class="thumbnail">
                 <img src="assets/images/01.jpg" alt="...">
                   <ul class="list-unstyled">
                 <li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -119,7 +85,7 @@
         <div class="row">
           <div class="offres">
             <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
+              <a ng-click="showModal()" class="thumbnail">
                 <img src="assets/images/01.jpg" alt="...">
                   <ul class="list-unstyled">
                 <li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -129,7 +95,7 @@
               </a>
             </div> 
             <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
+              <a ng-click="showModal()" class="thumbnail">
                 <img src="assets/images/01.jpg" alt="...">
                   <ul class="list-unstyled">
                 <li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -139,7 +105,43 @@
               </a>
             </div> 
             <div class="col-xs-12 col-md-4">
-              <a ng-click="gotoModal()" class="thumbnail">
+              <a ng-click="showModal()" class="thumbnail">
+                <img src="assets/images/01.jpg" alt="...">
+                  <ul class="list-unstyled">
+                <li><h2 id="Titre">BMW Serie 3</h2></li>
+                <li><span class="Price" id="Price">20.000 Euros</span></li>
+                <li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
+              </ul>
+              </a>
+            </div> 
+          </div>
+        </div>
+      </div>  
+      <div class="container">
+        <div class="row">
+          <div class="offres">
+            <div class="col-xs-12 col-md-4">
+              <a ng-click="showModal()" class="thumbnail">
+                <img src="assets/images/01.jpg" alt="...">
+                  <ul class="list-unstyled">
+                <li><h2 id="Titre">BMW Serie 3</h2></li>
+                <li><span class="Price" id="Price">20.000 Euros</span></li>
+                <li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
+              </ul>
+              </a>
+            </div> 
+            <div class="col-xs-12 col-md-4">
+              <a ng-click="showModal()" class="thumbnail">
+                <img src="assets/images/01.jpg" alt="...">
+                  <ul class="list-unstyled">
+                <li><h2 id="Titre">BMW Serie 3</h2></li>
+                <li><span class="Price" id="Price">20.000 Euros</span></li>
+                <li><p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p></li>
+              </ul>
+              </a>
+            </div> 
+            <div class="col-xs-12 col-md-4">
+              <a ng-click="showModal()" class="thumbnail">
                 <img src="assets/images/01.jpg" alt="...">
                   <ul class="list-unstyled">
                 <li><h2 id="Titre">BMW Serie 3</h2></li>
@@ -208,20 +210,18 @@
 
 
         <!-- Modal Welcome -->
-      <div class="modal fade" id="welcome" role="dialog">
-        <div class="modal-dialog">
-        
-          <!-- Modal content-->
-          <div class="modal-content col-md-12 text-center">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-           </div>
-            <div class="modal-body">
-              <img src='profile_pic'>
-              <p>'status'</p>
-                
-              
+        <!-- <div class="modal fade" id="welcome" role="dialog">
+          <div class="modal-dialog">
+
+            
+            <div class="modal-content col-md-12 text-center">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <img src='profile_pic'>
+                <p>'status'</p>
+              </div>
             </div>
           </div>
-          </div>
-        </div>
+        </div> -->
